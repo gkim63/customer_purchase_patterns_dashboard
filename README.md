@@ -1,4 +1,4 @@
-# Customer_Shopping_Insights_Dashboard
+# Customer Purchase Patterns Dashboard
 ## Data Source
 The original dataset used in this project is available at:
 
