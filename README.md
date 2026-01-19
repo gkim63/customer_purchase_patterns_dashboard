@@ -9,7 +9,11 @@ The analysis is structured around three core areas:
 - **Delivery Type Analysis** – understanding shipping preferences and the impact of free shipping on customer behavior
 - **Payment Method Analysis** – comparing preferred payment methods with actual payment behavior to uncover checkout friction
 The dashboard is designed using multiple related tables and enhanced with **drill-through** and **tooltip** interactions, allowing users to move from high-level insights to detailed exploration without overwhelming the interface.
+
+### Drill Through View
 ![Drill Through](./Screenshots/5.Drill_Through.png)
+
+### Tool Tips View
 ![Tool Tips](./Screenshots/6.Tool_Tip_Screenshot.png)
 
 
@@ -72,6 +76,7 @@ Tooltip insights show variation in discount usage by payment method. Future dash
 - Introduce **product category–level analysis** across all pages to connect customer behavior with merchandising decisions.
 - Add **predictive analytics** to forecast demand by customer segment and delivery type.
 - Further optimize the data model to improve refresh performance as data volume increases.
+
 
 
 
