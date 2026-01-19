@@ -1,6 +1,6 @@
 # Customer Purchase Patterns Dashboard
 ![Customer Behavior Dashboard](./Screenshots/1.Customer_Behavior.pdf)
-[View full dashboard screenshots](./Screenshots/1.Customer%20Behavior.pdf)
+![View full dashboard screenshots](./Screenshots/1.Customer%20Behavior.pdf)
 
 ## Project Overview
 This project presents an interactive Power BI dashboard built to analyze customer purchasing behavior for **Trend Cart Apparel**, an online apparel retail company.
@@ -68,6 +68,7 @@ Tooltip insights show variation in discount usage by payment method. Future dash
 - Introduce **product category–level analysis** across all pages to connect customer behavior with merchandising decisions.
 - Add **predictive analytics** to forecast demand by customer segment and delivery type.
 - Further optimize the data model to improve refresh performance as data volume increases.
+
 
 
 
