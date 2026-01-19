@@ -1,80 +1,69 @@
 # Customer Purchase Patterns Dashboard
-## Data Source
-The original dataset used in this project is available at:
+![Customer Behavior Dashboard](Screenshots/customer_behavior.png)
+## Project Overview
+This project presents an interactive Power BI dashboard built to analyze customer purchasing behavior for **Trend Cart Apparel**, an online apparel retail company.
+The dashboard focuses on understanding **how customers purchase, pay, and choose delivery options**, with the goal of identifying actionable patterns that can support business decision-making.
 
-🔗 [Kaggle: Customer Shopping Trends Dataset](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset)
+The analysis is structured around three core areas:
+- **Customer Behavior Analysis** – identifying key customer segments, loyalty patterns, and purchasing trends
+- **Delivery Type Analysis** – understanding shipping preferences and the impact of free shipping on customer behavior
+- **Payment Method Analysis** – comparing preferred payment methods with actual payment behavior to uncover checkout friction
+The dashboard is designed using multiple related tables and enhanced with **drill-through** and **tooltip** interactions, allowing users to move from high-level insights to detailed exploration without overwhelming the interface.
 
-## OverView
-This project analyzes customer purchase data and visualizes seasonal trends, payment method preferences, shipping method patterns, and regional order distribution through a Power BI dashboard. Insights help identify shifts in customer preferences, purchasing behaviors, and emerging trends, enabling the development of personalized services and the establishment of KPIs based on future demand forecasts.
+## Key Insights (Summary)
+- **Customer loyalty is concentrated in the 55+ age group**, indicating that current revenue is driven by an older, repeat-customer base, while younger segments present growth opportunities.
+- **Free shipping strongly influences purchase behavior**, acting as a key conversion driver rather than just a delivery option.
+- **A gap exists between preferred and actual payment methods**, suggesting potential checkout friction and opportunities to improve the payment experience.
 
+## Dashboard Walkthrough
+### Page 1. Customer Behavior Overview
+This page provides a high-level overview of customer purchasing behavior for **Trend Cart Apparel**. It highlights key customer segments, purchasing patterns, and loyalty distribution, serving as the entry point for deeper analysis across the dashboard.
 
-## Dataset Description
-- File: `shopping_trends.csv`  
-- Rows: 3,900 | Columns: 18  
+#### Key Insights
+- **Core Customer Segment:** Customers aged **55+** account for the largest share of total orders and show a higher concentration of **Loyal and VIP** customers. This indicates that current revenue is strongly supported by an older, more loyal customer base.
+- **Stable Purchase Patterns:** Product size preferences (primarily **M and L**) and seasonal order volume remain relatively consistent, suggesting that demand is not heavily season-driven and is more influenced by customer segments.
 
-## Dashboard Feature
+### Page 2. Delivery Type Analysis
+This page focuses on how customers choose delivery options and how shipping preferences relate to customer age and purchase history.
 
-**Dashboard 1: Home**
-- Total Orders, Average Purchase Amount, Subscription Rate, Discount Usage Rate
-- Delivery Method Distribution
-- Order Volume by Season
-- Top 5 Most Frequently Used Payment Methods
-- Top 5 States by Order Volume
+#### Key Insights
+- **Free Shipping as a Conversion Driver:** A significant portion of orders use **Free Shipping**, indicating that shipping cost plays a critical role in purchase decisions.
+- **Delivery Choice & Customer History:** Customers with more previous purchases tend to show consistent delivery preferences, suggesting that delivery choice is influenced by customer maturity rather than one-time behavior.
 
-**Dashboard 2: Payment & Discount Analysis**
-- Order Volume by Payment Method: Actual vs Preferred
-- Average Order Value by Payment Method
-- Payment Conversion Efficiency
-- Impact of Payment Method on Discount Usage
-- Top Actual Payment
-- Top Preferred Payment
+### Page 3. Payment Method Analysis
+This page compares customers’ **preferred payment methods** with their **actual payment behavior**, helping identify gaps between intent and real checkout actions.
 
-**Dashboard 3: Customer Behavior**
-- Delivery Method Distribution
-- Seasonal Purchase Patterns by Product Size
-- Impact of Payment Methods on Discount Usage
-- Top Age Group by Orders, Average Review Rate, Popular Color Rate
+#### Key Insights
+- **Preference vs. Reality Gap:** While **PayPal** is the most preferred payment method, **Credit Cards** are the most frequently used in actual transactions. This gap may indicate checkout friction, authentication issues, or external incentives influencing payment choices.
+- **Payment Behavior & Discount Usage:** Discount usage varies by payment method. A **tooltip interaction** on the fourth chart reveals detailed discount-related metrics when hovering over each payment method, enabling deeper insights without overcrowding the dashboard.
+  
+## Future Improvements & Business Recommendations
+### Page 1. Customer Behavior Overview
 
-**Dashboard 4: Delivery Type**
-- Order Count by Delivery Type
-- Free Shipping Orders by Age Group
-- Average of Previous Purchases by Delivery Type
-- Promo Code Usage Rate, Top Shipping Type, Popular Color Rate
+1. Expand Loyalty Conversion for Younger Customers
+The 55+ age group currently drives the majority of orders and loyalty tiers. A potential improvement would be to design targeted campaigns for younger customers (18–34) to encourage repeat purchases and loyalty program enrollment. This could include personalized promotions or onboarding incentives.
 
-**Dashboard 5: State Analysis**
-- Top Ordering States: Total Sales, Rate, Payment Method, Preferred Payment Method
-- Top 5 States by Order Volume
-- Total Orders & Amount by State
-- Bottom 5 States by Order Volume
-- Purchase Patterns by Age Group & State
+2. Enhance Customer Segmentation Analysis
+Future iterations could introduce deeper segmentation by combining age group, purchase frequency, and average order value. This would enable more precise targeting and support customer lifetime value (CLV)–driven strategies.
 
-## Key Insights
+### Page 2. Delivery Type Analysis
 
-**1. Top Order Age Group: 55+ (1,178 out of 3,900 orders)**
-- Approximately one-third of customers are aged 55+ in this store. Since this is an uneven distribution, the marketing team should decide which other age groups to focus on.
-- If focusing on the 55+ group, it is necessary to identify which product categories or promotions can encourage higher consumption from this age group.
-- If focusing on all age groups, the store should investigate gaps in product offerings or marketing strategies to appeal to different age segments and determine which products each group prefers.
-- 
-**2. Discount Usage (43%) and Promo Code Usage (43%)**
-  - Since discount and promo code usage percentages are identical, it can be assumed that both represent the same group of customers.
-  - When the system applies automatic discounts, the promo code discount may be counted as duplicate information; future dashboards should consider removing one of the columns.
-  - Promo codes appear to have a significant effect on customer behavior, indicating that customers are well aware of store promotions.
-  - 
-**3. Customer Preferred Payment vs. Actual Payment**
-- While customers prefer to use PayPal, the actual payment method used is Credit Card, indicating a gap between preference and behavior.
-- Possible reasons include:
-    - Customers may avoid logging in or connecting their PayPal account at the time of payment.
-    - Credit Card payments may offer benefits or cashback that influence the choice.
-    - Certain products or payment environments may not support PayPal.
+1. Optimize Free Shipping Strategy
+Since free shipping strongly influences customer behavior, future analysis could evaluate minimum purchase thresholds to qualify for free shipping. This would help balance conversion impact with logistics costs.
 
-## Tech Stack
-- Power BI
-- DAX
-- Tooltip
-- Drill Through
+2. Personalize Delivery Options for Repeat Customers
+Delivery preferences vary based on customer purchase history. Offering tailored shipping options or exclusive delivery benefits to repeat customers could improve retention without broadly increasing shipping expenses.
 
-## Future Improvements
-- Add deeper analysis by product category and season
-- Implement predictive analytics for demand forecasting
-- Improve dashboard interactivity and filters for user experience
-- Optimize data model for faster refresh and performance
+### Page 3. Payment Method Analysis
+
+1. Reduce Friction Between Preferred and Actual Payment Methods
+The gap between preferred (PayPal) and actual (Credit Card) payment methods suggests potential checkout friction. Future improvements could include analyzing drop-off rates during payment selection or testing simplified authentication flows.
+
+2. Leverage Payment-Specific Promotions
+Tooltip insights show variation in discount usage by payment method. Future dashboards could explore targeted promotions tied to specific payment methods to influence customer behavior more effectively.
+
+### Dashboard & Technical Enhancements
+- Introduce **product category–level analysis** across all pages to connect customer behavior with merchandising decisions.
+- Add **predictive analytics** to forecast demand by customer segment and delivery type.
+- Further optimize the data model to improve refresh performance as data volume increases.
+
