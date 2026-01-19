@@ -1,5 +1,5 @@
 # Customer Purchase Patterns Dashboard
-![Customer Behavior Dashboard](./Screenshots/1.Customer Behavior.png)
+![Customer Behavior Dashboard](./Screenshots/1.Customer_Behavior.png)
 
 ![View full dashboard screenshots](Screenshots/1.Customer%20Behavior.pdf)
 
@@ -69,6 +69,7 @@ Tooltip insights show variation in discount usage by payment method. Future dash
 - Introduce **product category–level analysis** across all pages to connect customer behavior with merchandising decisions.
 - Add **predictive analytics** to forecast demand by customer segment and delivery type.
 - Further optimize the data model to improve refresh performance as data volume increases.
+
 
 
 
